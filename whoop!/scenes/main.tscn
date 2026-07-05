@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c8v4466fjty2b" path="res://assets/sprites/world_tileset.png" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://dh0cy0aos1b0p" path="res://scenes/player.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://c314rwjvoi5ll" path="res://scenes/coin.tscn" id="4_jyhfs"]
+[ext_resource type="Script" uid="uid://beu4phb0rrd0k" path="res://script/game_manager.gd" id="5_tbgi4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
 texture = ExtResource("2_jyhfs")
@@ -352,3 +353,6 @@ scale = Vector2(3, 3)
 [node name="coin6" parent="." unique_id=1204097254 instance=ExtResource("4_jyhfs")]
 position = Vector2(552, 179)
 scale = Vector2(3, 3)
+
+[node name="GameManager" type="Node" parent="." unique_id=1165548278]
+script = ExtResource("5_tbgi4")
